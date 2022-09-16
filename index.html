@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(90deg,#6aa95f,#55a3b9);
+            /* background: linear-gradient(90deg,#bc9fdf,#8ad6eb); */
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- ---------------------------SECTION-1 : NAV BAR-------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Magic Notes</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            id="search"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- ---------------------------SECTION-2 : MAIN SECTION -------------------------------------------------------- -->
+
+    <div class="container my-3">
+
+    <!-- ---------------------------INNER SECTION : 1 -------------------------------------------------------- -->
+      <h1>Welcome to Magic Notes App</h1>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add a Note</h5>
+          <div class="form-group">
+            <textarea class="form-control" id="addText" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" id="addBtn">Add Note</button>
+        </div>
+      </div>
+
+      <hr />
+      <h1>Your Note</h1>
+      <hr />
+
+    <!-- ---------------------------INNER SECTION : 2 -------------------------------------------------------- -->
+      <div id="Notes" class="row container-fluid">
+        <div class="noteCard my-2 mx-2 card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Note</h5>
+            <p class="card-text"></p>
+            <button id="deleteBtn" class="btn btn-primary">Delete Note</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
